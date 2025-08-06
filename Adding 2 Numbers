@@ -1,0 +1,13 @@
+/*
+Developer   - Sriram Venkata Krishna
+Date        - 07-08-2025
+Processor   - ATmega8
+*/
+
+;Adding 2 Numbers
+
+.CSEG;
+LDI R16, 0XF1;
+LDI R17, 0X66;
+ADD R16, R17;
+NOP;
