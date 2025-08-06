@@ -1,0 +1,30 @@
+/*
+Developer   - Sriram Venkata Krishna
+Date        - 07-08-2025
+Processor   - ATmega8
+*/
+
+;16-Bit Addition using a 8-Bit Processor
+
+.CSEG;
+LDI ZL, LOW(NUM1<<1);
+LDI ZH, HIGH(NUM1<<1);
+LPM R0, Z+;
+LPM R1, Z;
+LDI ZL, LOW(NUM2<<1);
+LDI ZH, HIGH(NUM2<<1);
+LPM R2, Z+;
+LPM R3, Z;
+LDI XL, 0x60;
+LDI XH, 0x00;
+LDI R16, 0X00;
+ADD R0, R2;
+ADC R1, R3;
+	BRCC ABC;
+	LDI R16, 0x01;
+ABC: ST X+, R0;
+	ST X+, R1;
+	ST X, R16;
+NOP;
+NUM1: .db 0xD3, 0x5F;
+NUM2: .db 0x15, 0xD2;
