@@ -18,6 +18,7 @@ SETUP :
 	LDI XH, 0x00;
 	LDI XL, 0x60;
 
+
 LOOP : 
 	LPM R1, Z;
 	MOV R16, R1;
