@@ -14,8 +14,8 @@ Question	- 1
 #include "m8def.inc"
 
 SETUP :
-    LDI R16, 0xFF;
-	OUT DDRD, R16;
+    LDI R15, 0xFF;
+	OUT DDRD, R15;
 	LDI R16, 0xFF;
 	LDI R17, 0xFF;
 
