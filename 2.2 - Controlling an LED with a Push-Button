@@ -14,14 +14,16 @@ Question	- 2
 #include "m8def.inc"
 
 SETUP :
-    LDI R15, 0x00;
-	OUT DDRB, R15;
-	LDI R15, 0xFF;
-	OUT DDRD, R15;
+    LDI R30, 0x00;
+	OUT DDRB, R30;
+	LDI R30, 0xFF;
+	OUT DDRD, R30;
+	LDI R17, OxFF;
 
 
 LOOP:
 	IN R16, PINB;
+	EOR R16, R17;
 	OUT PORTD, R16;	
 
 DONE :
