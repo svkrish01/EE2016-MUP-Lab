@@ -14,8 +14,8 @@ Question	- 1
 #include "m8def.inc"
 
 SETUP :
-    LDI R15, 0xFF;
-	OUT DDRD, R15;
+    LDI R30, 0xFF;
+	OUT DDRD, R30;
 	LDI R16, 0xFF;
 	LDI R17, 0xFF;
 
@@ -31,7 +31,7 @@ DELAY_500MS:
 		LDI R19, 0x32;
 
 	DELAY_2:
-		LDI R18, 0x32;
+		LDI R18, 0x64;
 
 	DELAY_3:
 		DEC R18;
