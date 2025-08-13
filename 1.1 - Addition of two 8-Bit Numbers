@@ -29,8 +29,7 @@ CODE :
 
 DONE :
 	ST X+, R16;
-	ST X+, R17;
-	ST X+, R18;
+	ST X, R18;
 	NOP;
 
 NUM: .db 0xF7, 0x68;
