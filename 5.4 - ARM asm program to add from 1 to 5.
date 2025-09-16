@@ -1,5 +1,5 @@
-		    AREA Example, CODE, READONLY     ; sum 1+2+3+4+5 =15 (F)
-		    ENTRY
+		AREA Example, CODE, READONLY     ; sum 1+2+3+4+5 =15 (F)
+		ENTRY
 
         MOV     R0, #0
         MOV     R1, #0
@@ -11,4 +11,4 @@ BACKK   ADD     R0, R0, #1
 
 GO      B       GO
 
-		    END
+		END
