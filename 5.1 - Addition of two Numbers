@@ -1,0 +1,23 @@
+/*
+Developer   - Sriram Venkata Krishna
+Date        - 16-09-2025
+Processor   - ARM - LPC-2148
+*/
+
+/*
+Experiment	- 5
+Problem   	- 1
+*/
+
+;5.1 - Addition of two Numbers
+
+		AREA Example, CODE, READONLY     ; Define a named code section ('Example'), marked as read-only
+        ENTRY                            ; Declare the entry point of the program (start of execution)
+
+start   MOV     R0, #10                  ; Move the immediate value 10 into register R0 (R0 = 10)
+        MOV     R1, #3                   ; Move the immediate value 3 into register R1 (R1 = 3)
+        ADD     R0, R0, R1               ; Add the contents of R1 to R0 (R0 = R0 + R1 = 13)
+
+stop    B       stop                     ; Infinite loop: branch unconditionally to the label 'stop'
+
+        END     
