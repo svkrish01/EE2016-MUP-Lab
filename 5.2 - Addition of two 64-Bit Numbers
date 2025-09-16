@@ -1,14 +1,12 @@
         AREA Example, CODE, READONLY     ; Define a code section named 'Example', read-only
         ENTRY                            ; Mark the entry point
 
-Start
-        MOV     R0, #12                  ; High part of first 64-bit number (A)
+start	MOV     R0, #12                  ; High part of first 64-bit number (A)
         MOV     R1, #10                  ; Low part of first 64-bit number (A)
         MOV     R2, #5                   ; High part of second 64-bit number (B)
         MOV     R3, #8                   ; Low part of second 64-bit number (B)
-        ADDS    R5, R1, R3              ; Add low parts: R5 = R1 + R3, updates carry flag
-        ADC     R6, R0, R2              ; Add high parts + carry: R6 = R0 + R2 + carry
+        ADD     R5, R1, R3               ; Add low parts: R5 = R1 + R3, updates carry flag
+        ADC     R6, R0, R2               ; Add high parts + carry: R6 = R0 + R2 + carry
 		
-stop	B       stop                    ; Infinite loop to end the program
-
-        END                             ; End of the file
+stop	B       stop                     ; Infinite loop to end the program
+        END                              ; End of the file
