@@ -8,7 +8,7 @@
 
 ; 5.2 - Series of Squares
 
-		AREA Example_5, CODE, READONLY		; Code Section 
+		AREA Problem_2, CODE, READONLY		; Code Section 
 		ENTRY								; Entry Point
 		
 start	LDR 	R0, NUM1					; R0 = NUM1
