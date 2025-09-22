@@ -6,7 +6,7 @@
 ; Experiment	- 5
 ; Example		- 4
 
-; Ex 5.4 - Fibonacci Series
+; Ex 5.4 - Sum of Natural Numbers
 
 		AREA Example_4, CODE, READONLY		; Code Section 
 		ENTRY								; Entry Point
