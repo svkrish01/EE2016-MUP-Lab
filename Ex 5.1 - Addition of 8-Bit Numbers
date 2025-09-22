@@ -8,7 +8,6 @@
 
 ; Ex 5.1 - Addition of 8-Bit Numbers
 
-
 		AREA Example_1, CODE, READONLY		; Code Section 
 		ENTRY								; Entry Point
 		
@@ -18,4 +17,4 @@ start	MOV 	R0, #10						; R0 = 10
 		
 stop 	B		stop						; Infinite Loop
 
-		END
+		END									; End of File
