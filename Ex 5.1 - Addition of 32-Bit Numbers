@@ -6,7 +6,7 @@
 ; Experiment	- 5
 ; Example		- 1
 
-; Ex 5.1 - Addition of 8-Bit Numbers
+; Ex 5.1 - Addition of 32-Bit Numbers
 
 		AREA Example_1, CODE, READONLY		; Code Section 
 		ENTRY								; Entry Point
