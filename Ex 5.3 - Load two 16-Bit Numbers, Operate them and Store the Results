@@ -5,7 +5,7 @@
 ; Experiment	- 5
 ; Example		- 3
 
-; Ex 5.3 - Load two 16-Bit Numbers, Add and Reverse Subtract them and Store the Results
+; Ex 5.3 - Load two 16-Bit Numbers, Operate them and Store the Results
 
 		AREA Example_3, CODE, READONLY		; Code Section 
 		ENTRY								; Entry Point
