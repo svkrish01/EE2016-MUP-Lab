@@ -32,7 +32,7 @@ NUM1	DCW 	&05							; NUM1 = 0x5
 			
 		AREA DataRAM, DATA, READWRITE
 			
-RESULT 	DCD		0							; 32-Bit Space for RESULT1 (Sum)
+RESULT 	DCD		0							; 32-Bit Space for RESULT (Sum)
 
 		END									; End of File
 		
