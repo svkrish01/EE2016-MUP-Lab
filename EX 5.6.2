@@ -1,0 +1,36 @@
+; Developer        - Sriram Venkata Krishna
+; Date            - 23-09-2025
+; Software        - Keil Micro-Vision 5
+; Controller      - ARM LPC2148
+
+; Experiment      - 5
+; Example         - 6
+
+; 5.6 - Factorial of a Number
+
+        AREA Example_6, CODE, READONLY        ; Code Section 
+        ENTRY                                 ; Entry Point
+        
+start   LDR     R0, NUM1                      ; R0 = NUM1 (load the number for factorial)
+        MOV     R1, #2                        ; R1 = 2 (starting point for multiplication)
+        MOV     R2, #1                        ; R2 = 1 (accumulator for factorial)
+        
+        LDR     R4, =RESULT                   ; R4 = Address of RESULT    
+
+loop    MUL     R2, R2, R1                    ; R2 = R2 * R1 (accumulating the factorial)
+        ADD     R1, R1, #1                    ; R1 = R1 + 1 (next number to multiply)
+        CMP     R0, R1                        ; Compare R0 (NUM1) with R1
+        BNE     loop                           ; If R0 != R1, continue looping
+        
+        STR     R2, [R4]                      ; Store the result (R2) in RESULT
+        
+stop    B       stop                          ; Infinite Loop (end of program)
+        
+NUM1    DCW     &05                           ; NUM1 = 0x5 (Factorial of 5)
+        ALIGN
+            
+        AREA DataRAM, DATA, READWRITE
+            
+RESULT  DCD     0                             ; Space for RESULT
+
+        END                                    ; End of File
